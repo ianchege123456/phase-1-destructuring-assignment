@@ -1,0 +1,74 @@
+// Data provided
+const {
+    standard: {
+      name: standardName,
+      population: standardPop,
+      position: standardPos,
+      correctAnswers: standardCorrect,
+      incorrectAnswers: standardIncorrect
+    },
+    achievement: {
+      name: achievementName,
+      population: achievementPop,
+      position: achievementPos,
+      correctAnswers: achievementCorrect,
+      incorrectAnswers: achievementIncorrect
+    }
+  } = {
+    standard: {
+      name: 'Joe Schmoe',
+      population: '200,000',
+      position: '1st',
+      correctAnswers: '20',
+      incorrectAnswers: '2'
+    },
+    achievement: {
+      name: 'Sally Student',
+      population: '100,000',
+      position: '2nd',
+      correctAnswers: '25',
+      incorrectAnswers: '2'
+    }
+  };
+  
+  const [first, , last] = ['Alice', 'Bob', 'Charlie'];
+  
+  const [even, odd] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce(
+    (acc, num) => {
+      if (num % 2 === 0) acc[0].push(num);
+      else acc[1].push(num);
+      return acc;
+    },
+    [[], []]
+  );
+  
+  const {
+    name: professorName,
+    course: courseName,
+    duration: courseDuration
+  } = {
+    name: 'Dr. Steve Brule',
+    course: 'Learn Spanish with Dr. Steve Brule',
+    duration: '3 weeks'
+  };
+  
+  // Dummy console.log() statements to prevent linting errors
+  console.log(
+    standardName,
+    standardPop,
+    standardPos,
+    standardCorrect,
+    standardIncorrect
+  );
+  console.log(
+    achievementName,
+    achievementPop,
+    achievementPos,
+    achievementCorrect,
+    achievementIncorrect
+  );
+  console.log(first, last);
+  console.log(even, odd);
+  console.log(professorName, courseName, courseDuration);
+  
+  
